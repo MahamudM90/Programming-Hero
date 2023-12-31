@@ -60,3 +60,101 @@ body{
     border-bottom: 1px solid red;
 
   }
+  hr{
+    width:50%;
+    color: antiquewhite;
+    background-color:gray;
+  }
+  .donate-now{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .amount-button{
+    display: flex;
+    justify-content: center;
+  }
+  .plan {
+    text-align: center;
+  }
+  .plan-donation {
+    text-align: center;
+    
+  }
+  .three-menu{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .food {
+    background-color: brown;
+    padding: 40px 30px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .shelter{
+    background-color: cadetblue;
+    padding: 40px 30px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .frame{
+    background-color: yellow;
+    padding: 40px 30px;
+    height: 250px;
+    border-radius: 5px;
+  }
+ .live-donation{
+  margin-top: 150px;
+  display: flex;
+  gap: 40px;
+
+  }
+  .depend{
+    margin-left: 150px;
+    width: 50%;
+
+  }
+  .donation-part img{
+    width: 85%;
+    border-radius: 5px;
+  }
+  .survive{
+    display: flex;
+    margin-top: 100px;
+  }
+  .survive-aprt{
+    margin-left: 150px;
+
+  }
+
+  .survive-aprt img{
+    width: 75%;
+    border-radius: 5px;
+  }
+  .depend-on{
+    width: 50%;
+    margin-right: 150px;
+  }
+  .updates{
+    margin-top: 40px;
+  }
+  .get-update{
+    margin-left: 250px;
+  }
+  .email{
+    background-color: antiquewhite;
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 150px;
+  }
+  
+
+  
+    
