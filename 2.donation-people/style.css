@@ -148,13 +148,61 @@ body{
   .get-update{
     margin-left: 250px;
   }
-  .email{
-    background-color: antiquewhite;
-    margin-left: 250px;
-    margin-right: 250px;
-    height: 150px;
+  .get-head{
+    margin-left: 200px;
   }
+  .email{
+    display: flex;  
+    padding: 70px 100px;
   
-
-  
+  }
+  .em-sub{
+    background-color: aqua;
+    margin-left: 300px;
+    margin-right: 200px;
+    height: 200px;
+    width: 800px;
+    border-radius: 2px;
     
+  }
+  .email-side{
+    padding:2px 4px;
+    color: aliceblue;
+    font-weight: 600;
+    width: 50px;
+    
+  }
+  .email-portion{
+    background-color: violet;
+    margin-left: 50px;
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .subscribe-portion{
+    background-color: brown;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+   
+  }
+  .subscribe{
+    text-align: center;
+    color: aliceblue;
+    
+  }
+  .footer-end{
+    margin-top: 100px;
+    height: 200px;
+    background-color: black;
+  }
+  .hamble{
+    color: violet;
+    text-align: center;
+    padding: 40px 1px 1px 1px;
+  }
+  .gonna{
+    color: white;
+    text-align: center;
+    
+  }
