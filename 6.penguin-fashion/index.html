@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Tailwind Css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/b316d6e068.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              navcolor: '#FFFBF0',
+              penguin: '#FABE4C',
+              winter: '#363958',
+              industry: '#3E3E3E',
+              buttoncolor: '#FFFFFF',
+              jacket: '#F1F1F1',
+            },
+          },
+        },
+      };
+    </script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Penguin Fashion</title>
+  </head>
+
+  <body>
+    <!--Navbar Start-->
+    <section class="container bg-navcolor mx-auto">
+      <nav class="navcolor p-4">
+        <div class="container flex justify-between items-center">
+          <!-- Logo or brand -->
+          <div>
+            <img class="w-4/12" src="assest/icons/logo.png" alt="logo" />
+          </div>
+
+          <!-- Navigation links for larger screens -->
+          <div class="hidden lg:flex space-x-4">
+            <a href="#" class="text-black">Home</a>
+            <a href="#" class="text-black">Product</a>
+            <a href="#" class="text-black">About Us</a>
+            <a href="#" class="text-black">Contact Us</a>
+          </div>
+
+          <!-- Hamburger icon for smaller screens -->
+          <div class="lg:hidden">
+            <button id="toggleBtn" class="focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Responsive navigation menu for smaller screens -->
+      <div id="menu" class="lg:hidden hidden bg-lime-600 p-4">
+        <a href="#" class="block text-white mb-2">Home</a>
+        <a href="#" class="block text-white mb-2">About</a>
+        <a href="#" class="block text-white mb-2">Services</a>
+        <a href="#" class="block text-white mb-2">Contact</a>
+      </div>
+
+      <script>
+        document
+          .getElementById('toggleBtn')
+          .addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+          });
+      </script>
+      <div class="bg-navcolor py-7">
+        <div class="flex justify-between">
+          <div class="p-10">
+            <h1>
+              <span class="text-4xl uppercase text-penguin"
+                >Be the Penguins</span
+              >
+              <span class="block text-4xl uppercase text-winter"
+                >of Winter</span
+              >
+            </h1>
+            <p class="industry py-4">
+              Lorem Ipsum is simply dummy text of the printing
+              <span class="block">and typesetting industry.</span>
+            </p>
+            <div class="py-1">
+              <button
+                class="w-32 h-10 text-buttoncolor uppercase font-bold bg-lime-600 rounded"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+              </button>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-3/4 h-full py-2"
+              src="assest/images/model.png"
+              alt="model img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Navbar End-->
+    <!--Woman Jacket start-->
+    <section class="container mx-auto py-5">
+      <h1 class="uppercase text-winter text-3xl font-bold">Woman Jacket</h1>
+      <div class="grid grid-cols-3 items-center justify-center align-items-center">
+        <div class="py-2 my-5 border shadow-xl bg-white w-80 h-fit rounded">
+          <div class="bg-jacket w-72 h-72 mx-auto rounded">
+            <img
+              class="w-full h-full"
+              src="assest/images/jacket-1.png"
+              alt="jacket-1"
+            />
+          </div>
+          <div class="p-8">
+            <h2 class="text-winter text-1xl font-bold">Yellow Coat jacket</h2>
+            <p class="text-winter">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="display flex justify-around">
+            <h2 class="text-penguin text-3xl font-bold">$234</h2>
+            <div class="">
+              <button
+                class="w-32 h-10 text-buttoncolor uppercase font-bold bg-lime-600 rounded"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2 my-5 shadow-2xl w-80 h-fit rounded">
+          <div class="bg-jacket w-72 h-72 mx-auto rounded">
+            <img
+              class="w-full h-full"
+              src="assest/images/jacket-2.png"
+              alt="jacket-1"
+            />
+          </div>
+          <div class="p-8">
+            <h2 class="text-winter text-1xl font-bold">Ladies Jacket</h2>
+            <p class="text-winter">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="display flex justify-around">
+            <h2 class="text-penguin text-3xl font-bold">$234</h2>
+            <div class="">
+              <button
+                class="w-32 h-10 text-buttoncolor uppercase font-bold bg-lime-600 rounded"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2 my-5 shadow-2xl w-80 h-fit rounded">
+          <div class="bg-jacket w-72 h-72 mx-auto rounded">
+            <img
+              class="w-full h-full"
+              src="assest/images/jacket-3.png"
+              alt="jacket-1"
+            />
+          </div>
+          <div class="p-8">
+            <h2 class="text-winter text-1xl font-bold">Woman Leather Jacket</h2>
+            <p class="text-winter">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="display flex justify-around">
+            <h2 class="text-penguin text-3xl font-bold">$234</h2>
+            <div class="">
+              <button
+                class="w-32 h-10 text-buttoncolor uppercase font-bold bg-lime-600 rounded"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Woman Jacket End-->
+    <!--Man Jacket Start-->
+    <section class="container mx-auto py-5">
+      <h1 class="uppercase text-winter text-3xl font-bold">man Jacket</h1>
+      <div class="grid grid-cols-3 gap-5">
+        <div class="py-2 my-5 shadow-2xl w-80 h-fit rounded">
+          <div class="bg-jacket w-72 h-72 mx-auto rounded">
+            <img
+              class="w-full h-full"
+              src="assest/images/jacket-4.png"
+              alt="jacket-1"
+            />
+          </div>
+          <div class="p-8">
+            <h2 class="text-winter text-1xl font-bold">Snowboard Jacket Mens</h2>
+            <p class="text-winter">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="display flex justify-around">
+            <h2 class="text-penguin text-3xl font-bold">$234</h2>
+            <div class="">
+              <button
+                class="w-32 h-10 text-buttoncolor uppercase font-bold bg-lime-600 rounded"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2 my-5 shadow-2xl w-80 h-fit rounded">
+          <div class="bg-jacket w-72 h-72 mx-auto rounded">
+            <img
+              class="w-full h-full"
+              src="assest/images/jacket-5.png"
+              alt="jacket-1"
+            />
+          </div>
+          <div class="p-8">
+            <h2 class="text-winter text-1xl font-bold">Man Leather Jackets</h2>
+            <p class="text-winter">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="display flex justify-around">
+            <h2 class="text-penguin text-3xl font-bold">$234</h2>
+            <div class="">
+              <button
+                class="w-32 h-10 text-buttoncolor uppercase font-bold bg-lime-600 rounded"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="py-2 my-5 shadow-2xl w-80 h-fit rounded">
+          <div class="bg-jacket w-72 h-72 mx-auto rounded">
+            <img
+              class="w-full h-full"
+              src="assest/images/jacket-6.png"
+              alt="jacket-1"
+            />
+          </div>
+          <div class="p-8">
+            <h2 class="text-winter text-1xl font-bold">Man Casual Jackets</h2>
+            <p class="text-winter">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="display flex justify-around">
+            <h2 class="text-penguin text-3xl font-bold">$234</h2>
+            <div class="">
+              <button
+                class="w-32 h-10 text-buttoncolor uppercase font-bold bg-lime-600 rounded"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Man Jacekt End-->
+    <!--Main Section Start-->
+    <section class="container mx-auto py-5">
+      <div class="flex items-center justify-around">
+      <div>
+      <div class=" w-2/3 h-1/3 shadow-xl bg-white flex items-center rounded">
+      <div class="p-3">
+        <img class="w-5/6 h-5/6" src="assest/icons/house.png" alt="house">
+      </div>
+      <div>
+        <h5 class="text-winter text-1xl font-bold">Find the Perfect Fit</h5>
+        <br>
+        <p class="text-winter">Everybody is different, which is why we
+          offer styles for every body.</p>
+      </div>
+    </div>
+    <div class=" w-2/3 h-1/3 shadow-xl bg-white flex items-center rounded my-4">
+      <div class="p-3">
+        <img class="w-5/6 h-5/6" src="assest/icons/box.png" alt="house">
+      </div>
+      <div>
+        <h5 class="text-winter text-1xl font-bold">Free Exchanges</h5>
+        <br>
+        <p class="text-winter">Everybody is different, which is why we
+          offer styles for every body.</p>
+      </div>
+    </div>
+
+    <div class=" w-2/3 h-1/3 shadow-xl bg-white flex items-center rounded my-4">
+      <div class="p-3">
+        <img class="w-5/6 h-5/6" src="assest/icons/question.png" alt="house">
+      </div>
+      <div>
+        <h5 class="text-winter text-1xl font-bold">Contact Our Seller</h5>
+        <br>
+        <p class="text-winter">Everybody is different, which is why we 
+          offer styles for every body.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-1/2 h-1/2">
+    <img src="assest/images/shopping.png">
+  </div>
+</div>
+    </section>
+    <!--Main Section End-->
+    <!--Footer start-->
+    <footer class="py-5">
+      <h5 class="text-center">Developed by 💙Mahamud Hasan</h5>
+    </footer>
+    <!--Footer End-->
+  </body>
+</html>
