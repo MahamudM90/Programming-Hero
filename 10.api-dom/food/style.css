@@ -1,0 +1,12 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    margin: 5px;
+}
+
+.lol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
