@@ -1,0 +1,16 @@
+.country{
+    background-color: #100F0F;
+    color: beige;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.lal{
+    height: 50%;
+    width: 70%;
+}
+
+.visited{
+    background-color: antiquewhite;
+}
